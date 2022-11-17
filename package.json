@@ -1,0 +1,23 @@
+{
+  "name": "tuiter-node-server-5610-fa22",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web server for the Tuiter application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Jingjing Lin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
