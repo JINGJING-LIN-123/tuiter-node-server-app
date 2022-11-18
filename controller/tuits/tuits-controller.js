@@ -13,6 +13,7 @@ const createTuit = (req, res) => {
     newTuit.retuits = 0;
     newTuit.likes = 0;
     newTuit.liked = false;
+    newTuit.dislikes = 0;
     tuits.push(newTuit);
     res.json(newTuit);
 }
