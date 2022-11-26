@@ -8,6 +8,12 @@ import UserController
 //const examplesController = require('./controller/examples-controller')
 import TuitsController
     from "./controller/tuits/tuits-controller.js";
+import mongoose from "mongoose";
+//mongoose.connect('mongodb://localhost:27017/tuiter');
+
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+    || 'mongodb://localhost:27017/tuiter'
+mongoose.connect(CONNECTION_STRING);
 
 const app = express()
 app.use(express.json());
@@ -19,6 +25,7 @@ app.use(cors())
 HelloController(app)
 UserController(app)
 TuitsController(app)
+
 
 
 
